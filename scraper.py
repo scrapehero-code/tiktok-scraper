@@ -64,7 +64,7 @@ async def run(playwright: Playwright) -> None:
         playwright: The Playwright instance.
     """
     browser = await playwright.chromium.launch(
-        headless=False, proxy={"server": "172.16.244.221:20071"}
+        headless=False, proxy={"server": "YOUR PROXY"}
     )
     context = await browser.new_context()
     # Open new page
